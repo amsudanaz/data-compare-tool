@@ -43,7 +43,6 @@ public class PostgreSQLJDBCExample {
 			Properties prop = new Properties();
 
 			//prop.setProperty("javax.net.ssl.trustStore","D:\\rds-combined-ca-bundle.pem");
-				
 			//-Djavax.net.debug=SSL
 			//?useSSL=true&requireSSL=true&sslmode=verify-full&ssl=true
 			String url = "jdbc:postgresql:";

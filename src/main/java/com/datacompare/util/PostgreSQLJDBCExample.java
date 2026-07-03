@@ -43,11 +43,10 @@ public class PostgreSQLJDBCExample {
 			Properties prop = new Properties();
 
 			//prop.setProperty("javax.net.ssl.trustStore","D:\\rds-combined-ca-bundle.pem");
-			prop.setProperty("user","munnavi");
-			prop.setProperty("password","Fp5MYUPkbvcF");	
+				
 			//-Djavax.net.debug=SSL
 			//?useSSL=true&requireSSL=true&sslmode=verify-full&ssl=true
-			String url = "jdbc:postgresql://vzw-euiv-myinfo-rdsdev-2018-10-09-auroradbcluster-12347mevdqnf2.cluster-ccpoyzezuqrd.us-east-1.rds.amazonaws.com:5432/OPS?sslmode=require&tcpKeepAlive=true";
+			String url = "jdbc:postgresql:";
 			connection = DriverManager.getConnection(url,prop);
 			System.out.println("\n"+url);
 			ResultSet rs = connection.getMetaData().getColumns(null, "dbtoolsecurity_config", "tblApprovalChain", null);
